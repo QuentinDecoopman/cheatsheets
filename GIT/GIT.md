@@ -1,5 +1,8 @@
 # Cheatsheet Git
 
+- [Cheatsheet PDF](https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf)
+- [Cheatsheet](https://training.github.com/downloads/fr/github-git-cheat-sheet/)
+
 ## Commandes de base :
 
 ### Initialiser un nouveau dépôt Git :
@@ -27,6 +30,7 @@
     git push <distant> <branche>
 
 ## Branche et Fusion :
+
 ### Créer une nouvelle branche :
 
     git branch <nom_de_branche>
@@ -35,10 +39,10 @@
 
     git checkout <nom_de_branche>
 
-(Ou utiliser la commande combinée : 
+(Ou utiliser la commande combinée :
 
-    git checkout -b <nom_de_branche> 
-    
+    git checkout -b <nom_de_branche>
+
 pour créer et passer à une branche en une seule étape.)
 
 ### Fusionner les modifications d'une branche dans une autre :
@@ -46,6 +50,7 @@ pour créer et passer à une branche en une seule étape.)
     git merge <nom_de_branche>
 
 ## Dépôts distants :
+
 ### Ajouter un dépôt distant :
 
     git remote add <nom_distant> <url_du_dépôt distant>
@@ -59,6 +64,7 @@ pour créer et passer à une branche en une seule étape.)
     git pull <nom_distant> <nom_branche>
 
 ## Annulation des modifications :
+
 ### Annuler les modifications dans le répertoire de travail :
 
     git checkout -- <fichier(s)>
@@ -72,6 +78,7 @@ pour créer et passer à une branche en une seule étape.)
     git reset --hard HEAD^
 
 ## Journalisation et Historique :
+
 ### Afficher l'historique des validations :
 
     git log
@@ -81,6 +88,7 @@ pour créer et passer à une branche en une seule étape.)
     git show <hash_de_la_validation>
 
 ## Divers :
+
 ## Configurer les informations utilisateur Git :
 
     git config --global user.name "Votre Nom"
