@@ -7,6 +7,8 @@ Un ensemble de cheatsheets
 - [CSS](/CSS/CSS.md)
 - [HTML](/HTML/HTML.md)
 - [JS](/Javascript/JS.md)
+  - [Méthodes de tableaux](/Javascript/Méthodes%20de%20tableaux.md)
+  - [POO](/Javascript/POO.md)
 - [Express](/express/Express.md)
 - [Node](/Node/Node.md)
 - [GIT](/GIT/GIT.md)
@@ -18,3 +20,5 @@ Un ensemble de cheatsheets
 - PHP
 - Python
 - React
+- POO javascript
+- GSAP
