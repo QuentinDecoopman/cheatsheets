@@ -20,8 +20,6 @@ Un ensemble de cheatsheets
 
 ## Ajout prévus
 
-- PHP
 - Python
-- React
 - POO javascript
 - GSAP
