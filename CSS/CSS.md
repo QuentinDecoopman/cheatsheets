@@ -1,4 +1,7 @@
 # Cheatsheet CSS
+
+- [Index](/Readme.md)
+
 ## Sélecteurs
 
 ```css
@@ -40,13 +43,14 @@ parent enfant {
 ```
 
 ## Propriétés de base
+
 ```css
 /* Couleur */
 color: #ff0000;
 background-color: #ffffff;
 
 /* Police */
-font-family: 'Arial', sans-serif;
+font-family: "Arial", sans-serif;
 font-size: 16px;
 font-weight: bold;
 
@@ -67,74 +71,76 @@ position: relative;
 opacity: 0.8;
 box-shadow: 2px 2px 4px #888888;
 ```
+
 ## Flexbox
 
 ```css
 /* Conteneur Flexbox */
 .conteneur {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Éléments Flexbox */
 .element {
-    flex: 1;
+  flex: 1;
 }
-
 ```
 
 ## Grid
+
 ```css
 /* Conteneur Grid */
 .conteneur {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 10px;
 }
 
 /* Éléments Grid */
 .element {
-    grid-column: span 2;
+  grid-column: span 2;
 }
-
 ```
 
 ## Animation
+
 ```css
 @keyframes monAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .element {
-    animation: monAnimation 2s infinite;
+  animation: monAnimation 2s infinite;
 }
-
 ```
 
 ## Transitions
+
 ```css
 .element {
-    transition: property 0.5s ease-in-out;
+  transition: property 0.5s ease-in-out;
 }
 
 .element:hover {
-    property: value;
+  property: value;
 }
 ```
 
 ## Media Queries
+
 ```css
 /* Appliquer un style pour les écrans de petite taille */
 @media screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+  body {
+    background-color: lightblue;
+  }
 }
 ```
 
@@ -142,27 +148,28 @@ box-shadow: 2px 2px 4px #888888;
 
 ```css
 :root {
-    --ma-couleur: #ff9900;
+  --ma-couleur: #ff9900;
 }
 
 .element {
-    color: var(--ma-couleur);
+  color: var(--ma-couleur);
 }
 ```
 
 ## Positionnement
+
 ```css
 /* Position absolue */
 .element {
-    position: absolute;
-    top: 10px;
-    left: 20px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 /* Position fixe */
 .element {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 ```

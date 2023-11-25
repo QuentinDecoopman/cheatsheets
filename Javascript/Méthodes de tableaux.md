@@ -1,5 +1,7 @@
 # Méthode de tableaux
 
+- [Index](/Readme.md)
+
 ### values():
 
 Cette méthode renvoie un itérateur

@@ -1,8 +1,11 @@
 # Cheatsheet Markdown
 
+- [Index](/Readme.md)
+
+## Titres
 
 ```
-# Titre 1 
+# Titre 1
 ## Titre 2
 ### Titre 3
 #### Titre 4
@@ -18,6 +21,7 @@
 ```
 
 ## Listes
+
 ### Liste non ordonnée
 
 ```
@@ -28,6 +32,7 @@
 ```
 
 ### Liste ordonnée
+
 ```
 1. Premier élément
 2. Deuxième élément
@@ -36,35 +41,38 @@
 ```
 
 ## Liens
+
 ```
 [Texte du lien](URL)
 ```
 
 ## Images
+
 ```
 ![Texte alternatif](URL_de_l_image)
 ```
 
 ## Citations
+
 ```
 > Ceci est une citation.
 ```
 
 ## Code
 
-```
+````
 Bloc de code
 ```langage
 Code ici
-```
+````
 
 Syntaxe colorée
-```
+
+````
 ```javascript
 const exemple = 'Syntaxe colorée';
 console.log(exemple);
-```
-
+````
 
 ## Lignes horizontales
 
@@ -90,17 +98,20 @@ Pour échapper un caractère spécial, utilisez le caractère \ avant le caract�
 ```
 
 ## Ancres (liens internes)
+
 ```
 [Aller à la section suivante](#section-suivante)
 ```
 
 ## Notes de bas de page
+
 ```
 Ceci est un exemple de note de bas de page[^1].
 
 [^1]: Ceci est le texte de la note de bas de page.
 
 ```
+
 ## En-têtes personnalisées
 
 ```

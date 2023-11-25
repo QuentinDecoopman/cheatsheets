@@ -2,10 +2,13 @@
 
 Un ensemble de cheatsheets
 
+- [Index](/Readme.md)
+
 ## Index
 
-- [CSS](/CSS/CSS.md)
+- [Terminal](/Terminal/Terminal.md)
 - [HTML](/HTML/HTML.md)
+- [CSS](/CSS/CSS.md)
 - [JS](/Javascript/JS.md)
   - [Méthodes de tableaux](/Javascript/Méthodes%20de%20tableaux.md)
   - [POO](/Javascript/POO.md)
