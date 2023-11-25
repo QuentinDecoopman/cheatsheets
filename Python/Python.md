@@ -1,7 +1,7 @@
 # Cheatsheet Python
 
 - [Index](/Readme.md)
-- [Docs](https://docs.python.org/3/)
+- [Doc](https://docs.python.org/3/)
 
 ## Variables et Types de Données :
 

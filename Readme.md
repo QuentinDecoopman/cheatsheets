@@ -20,6 +20,5 @@ Un ensemble de cheatsheets
 
 ## Ajout prévus
 
-- Python
 - POO javascript
 - GSAP

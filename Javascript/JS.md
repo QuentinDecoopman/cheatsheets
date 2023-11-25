@@ -1,6 +1,8 @@
 # Cheatsheet JavaScript
 
 - [Index](/Readme.md)
+- [DOC MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+- [JS INFO](https://fr.javascript.info/)
 
 ## Déclarations de variable
 
