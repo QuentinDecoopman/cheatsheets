@@ -55,6 +55,14 @@
 ?>
 ```
 
+## Constante :
+
+```phpà
+define("CONSTANTE", "Valeur");
+```
+
+````
+
 ## Types de données :
 
 ```php
@@ -62,7 +70,7 @@
     Entiers : $integer = 42;
     Flottants : $float = 3.14;
     Booléens : $bool = true;
-```
+````
 
 ## Opérateurs :
 

@@ -161,4 +161,16 @@
   <h3>Titre de l'aside</h3>
   <p>Contenu de l'aside.</p>
 </aside>
+
+<!-- Div -->
+<div>
+  <h4>Titre de la div</h4>
+  <p>Contenu de la div.</p>
+</div>
+
+<!-- Nav -->
+<main>
+  <h5>Titre de la nav</h5>
+  <p>Contenu de la nav.</p>
+</main>
 ```

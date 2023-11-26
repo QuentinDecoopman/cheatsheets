@@ -4,7 +4,7 @@
 - [DOC MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 - [JS INFO](https://fr.javascript.info/)
 
-## Déclarations de variable
+## Déclarations de variable et constante
 
 ```js
 // let et const
