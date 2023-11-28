@@ -18,7 +18,7 @@ Un ensemble de cheatsheets
 - [SQL](/SQL/SQL.md)
 - [Markdown](/Markdown/Markdown.md)
 
-## Ajout prévus
+## Ajout ou correction prévus
 
 - POO javascript
 - GSAP

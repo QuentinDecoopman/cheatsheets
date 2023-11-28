@@ -38,12 +38,6 @@ const personne = { nom: "John", age: 30 };
 const message = `Hello, ${nom}!`;
 ```
 
-## Spread/rest operator
-
-```js
-
-```
-
 ## Classes
 
 ```js
