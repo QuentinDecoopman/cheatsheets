@@ -2,8 +2,6 @@
 
 Un ensemble de cheatsheets
 
-- [Index](/Readme.md)
-
 ## Index
 
 - [Terminal](/Terminal/Terminal.md)
@@ -17,8 +15,9 @@ Un ensemble de cheatsheets
 - [GIT](/GIT/GIT.md)
 - [SQL](/SQL/SQL.md)
 - [Markdown](/Markdown/Markdown.md)
+- [MongoDB](/MongoDB/Mongo.md)
 
-## Ajout ou correction prévus
+## Ajout et / ou correction prévus
 
 - POO javascript
 - GSAP
