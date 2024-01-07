@@ -12,6 +12,39 @@ let x = 10;
 const y = 20;
 ```
 
+## Types de données
+
+```js
+let name = "John"; // String
+
+let age = 25; // Number
+
+let isStudent = true; // Boolean
+
+let fruits = ["apple", "orange", "banana"]; // Array
+
+let person = { firstName: "John", lastName: "Doe" }; // Object
+```
+
+## Opérateurs
+
+```js
+// Opérateurs arithmétiques
+let sum = 5 + 3;
+let difference = 10 - 5;
+let product = 2 * 4;
+let quotient = 8 / 2;
+
+// Opérateur de comparaison
+let isEqual = x === 10;
+let isNotEqual = y !== 5;
+
+// Opérateur Logique
+let andOperator = a && b;
+let orOperator = x || y;
+let notOperator = !isTrue;
+```
+
 ## Fonctions
 
 ```js
