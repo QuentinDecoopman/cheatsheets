@@ -66,6 +66,8 @@ function ComposantAvecEtat() {
 
 ## Gestion des Événements :
 
+### Au clic :
+
 ```jsx
 function ComposantAvecEvenement() {
   const handleClick = () => {
@@ -74,6 +76,16 @@ function ComposantAvecEvenement() {
 
   return <button onClick={handleClick}>Cliquez-moi</button>;
 }
+```
+
+### Au changement :
+
+```jsx
+function handleChange(event) {
+  // Code à exécuter lors du changement
+}
+
+return <input type="text" onChange={handleChange} />;
 ```
 
 ## Rendu conditionnel :
