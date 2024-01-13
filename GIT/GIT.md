@@ -2,7 +2,6 @@
 
 - [Index](/Readme.md)
 - [Doc](https://git-scm.com/docs)
-
 - [Cheatsheet PDF](https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf)
 - [Cheatsheet](https://training.github.com/downloads/fr/github-git-cheat-sheet/)
 
