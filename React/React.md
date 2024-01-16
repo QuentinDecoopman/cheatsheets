@@ -158,6 +158,69 @@ function Formulaire() {
 }
 ```
 
+## Hooks
+
+### useState
+
+```js
+// Gère l'état local d'un composant fonctionnel.
+const [state, setState] = useState(initialState);
+```
+
+### useEffect
+
+```js
+// Permet d'effectuer des opérations de côté (effets) dans les composants fonctionnels.
+
+useEffect(() => {
+  // Effet
+  return () => {
+    // Code de nettoyage
+  };
+}, [dependencies]);
+```
+
+### useContext
+
+```js
+// Permet d'accéder à la valeur d'un contexte React à l'intérieur d'un composant fonctionnel.
+
+const contextValue = useContext(MyContext);
+```
+
+### useReducer
+
+```js
+// Gère l'état d'un composant fonctionnel de manière plus avancée.
+
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+### useCallback
+
+```js
+// Memoize une fonction pour éviter sa recréation à chaque rendu.
+const memoizedCallback = useCallback(() => {
+  // Fonction
+}, [dependencies]);
+```
+
+### useMemo
+
+```js
+// Memoize la valeur calculée d'une expression pour éviter le recalcul inutile.
+
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+```
+
+### useRef
+
+```js
+// Crée un objet ref pour accéder à un élément DOM ou pour maintenir une valeur mutable.
+
+const myRef = useRef(initialValue);
+```
+
 ## Requête fetch
 
 ### GET
