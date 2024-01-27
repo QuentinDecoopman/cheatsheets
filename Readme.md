@@ -24,8 +24,8 @@ Un ensemble de cheatsheets
 
 ## Culture générale
 
-- [Chronologie des langages](chronologieLangage.md)
-- [Langages de programmation exotiques](langagesExotique.md)
+- [Chronologie des langages](ChronologieLangage.md)
+- [Langages de programmation exotiques](LangagesExotique.md)
 
 ## Ajout et / ou correction prévus
 
