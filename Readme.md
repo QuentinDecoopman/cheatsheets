@@ -17,6 +17,7 @@ Un ensemble de cheatsheets
 - [PHP](/PHP/PHP.md)
 - [Python](/Python//Python.md)
 - [React](/React/React.md)
+- [Redux](/Redux/Redux.md)
 - [SCSS](/SCSS/SCSS.md)
 - [SQL](/SQL/SQL.md)
 - [Terminal](/Terminal/Terminal.md)
@@ -24,11 +25,12 @@ Un ensemble de cheatsheets
 
 ## Culture générale
 
-- [Chronologie des langages](/chronologieLangage.md)
-- [Langages de programmation exotiques](/langagesExotique.md)
+- [Chronologie des langages](ChronologieLangage.md)
+- [Langages de programmation exotiques](LangagesExotique.md)
 
 ## Ajout et / ou correction prévus
 
 - POO javascript
 - React
+- Redux
 - GSAP

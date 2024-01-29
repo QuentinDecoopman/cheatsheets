@@ -40,6 +40,19 @@ const todoReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+```
+
+Ou
+
+```js
+const initialState = /* initial state */;
+
+const todoReducer = createReducer(initialState, (builder) => {
+  builder.addCase(ADD_TODO, (state, action) => {
+    state.todos = action.payload;
+  });
+});
 ```
 
 ## Store

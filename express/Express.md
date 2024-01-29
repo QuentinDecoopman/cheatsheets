@@ -116,7 +116,7 @@ app.use("/pages", router);
 ## Démarrage du serveur
 
 ```js
-app.listen(port, () => {
-  console.log(`Le serveur écoute sur le port ${port}`);
+app.listen(PORT, () => {
+  console.log(`listening on http://localhost:${PORT}`);
 });
 ```

@@ -163,21 +163,41 @@ function Formulaire() {
 ### useState
 
 ```js
-// Gère l'état local d'un composant fonctionnel.
-const [state, setState] = useState(initialState);
+// Import du hook
+import React, { useState } from "react";
+
+const MonComposant = () => {
+  // Init le state à 0
+  const [compteur, setCompteur] = useState(0);
+
+  const incrementer = () => {
+    // Utilisation de setCompteur pour incrémenter le compteur
+    setCompteur(compteur + 1);
+  };
+
+  return (
+    <div>
+      <p>La valeur du compteur est : {compteur}</p>
+      <button onClick={incrementer}>Incrémenter</button>
+    </div>
+    /* Au clic, on incrément le compteur à chaque clic */
+  );
+};
 ```
 
 ### useEffect
 
 ```js
 // Permet d'effectuer des opérations de côté (effets) dans les composants fonctionnels.
+// import du hook
+import React, { useEffect } from "react";
 
 useEffect(() => {
   // Effet
   return () => {
     // Code de nettoyage
   };
-}, [dependencies]);
+}, []);
 ```
 
 ### useContext
@@ -185,7 +205,32 @@ useEffect(() => {
 ```js
 // Permet d'accéder à la valeur d'un contexte React à l'intérieur d'un composant fonctionnel.
 
-const contextValue = useContext(MyContext);
+// Création d'un contexte
+import React, { createContext } from "react";
+
+const MonContexte = createContext();
+
+// Déclaration d'une valeur avec Provider
+const MonComposant = () => {
+  return (
+    <MonContexte.Provider value={"Valeur à partager"}>
+      <MonComposantEnfant />
+    </MonContexte.Provider>
+  );
+};
+
+// Utilisation de useContext dans un composant
+import React, { useContext } from "react";
+
+const MonComposant = () => {
+  const valeurContexte = useContext(MonContexte);
+
+  return (
+    <div>
+      <p>Valeur du contexte : {valeurContexte}</p>
+    </div>
+  );
+};
 ```
 
 ### useReducer
@@ -202,7 +247,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
 // Memoize une fonction pour éviter sa recréation à chaque rendu.
 const memoizedCallback = useCallback(() => {
   // Fonction
-}, [dependencies]);
+}, []);
 ```
 
 ### useMemo
