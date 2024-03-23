@@ -33,4 +33,6 @@ Un ensemble de cheatsheets
 - POO javascript
 - React
 - Redux
+- Docker
+- Tailwind
 - GSAP

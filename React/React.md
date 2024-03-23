@@ -279,7 +279,7 @@ const fetchData = async () => {
 
     console.log("GET request result:", result);
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.log("Error fetching data:", error);
   }
 };
 ```
@@ -304,7 +304,7 @@ const fetchData = async () => {
 
     console.log("POST request result:", result);
   } catch (error) {
-    console.error("Error making POST request:", error);
+    console.log("Error making POST request:", error);
   }
 };
 ```
@@ -328,7 +328,7 @@ const fetchData = async () => {
 
     console.log("PUT request result:", result);
   } catch (error) {
-    console.error("Error making PUT request:", error);
+    console.log("Error making PUT request:", error);
   }
 };
 ```
@@ -352,7 +352,7 @@ const fetchData = async () => {
 
     console.log("PATCH request result:", result);
   } catch (error) {
-    console.error("Error making PATCH request:", error);
+    console.log("Error making PATCH request:", error);
   }
 };
 ```
@@ -370,7 +370,7 @@ const fetchData = async () => {
 
     console.log("DELETE request result:", result);
   } catch (error) {
-    console.error("Error making DELETE request:", error);
+    console.log("Error making DELETE request:", error);
   }
 };
 ```
@@ -388,7 +388,7 @@ const fetchData = async () => {
 
     console.log("GET request result:", result);
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.log("Error fetching data:", error);
   }
 };
 ```
@@ -404,7 +404,7 @@ const fetchData = async () => {
 
     console.log("POST request result:", result);
   } catch (error) {
-    console.error("Error making POST request:", error);
+    console.log("Error making POST request:", error);
   }
 };
 ```
@@ -420,7 +420,7 @@ const fetchData = async () => {
 
     console.log("PUT request result:", result);
   } catch (error) {
-    console.error("Error making PUT request:", error);
+    console.log("Error making PUT request:", error);
   }
 };
 ```
@@ -436,7 +436,7 @@ const fetchData = async () => {
 
     console.log("PATCH request result:", result);
   } catch (error) {
-    console.error("Error making PATCH request:", error);
+    console.log("Error making PATCH request:", error);
   }
 };
 ```
@@ -452,7 +452,7 @@ const fetchData = async () => {
 
     console.log("DELETE request result:", result);
   } catch (error) {
-    console.error("Error making DELETE request:", error);
+    console.log("Error making DELETE request:", error);
   }
 };
 ```

@@ -4,6 +4,17 @@
 - [DOC MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 - [JS INFO](https://fr.javascript.info/)
 
+## Classes
+
+```js
+class Personne {
+  constructor(nom, age) {
+    this.nom = nom;
+    this.age = age;
+  }
+}
+```
+
 ## Déclarations de variable et constante
 
 ```js
@@ -12,18 +23,37 @@ let x = 10;
 const y = 20;
 ```
 
-## Types de données
+## Destructuration
 
 ```js
-let name = "John"; // String
+const personne = { nom: "John", age: 30 };
+```
 
-let age = 25; // Number
+## Fonctions
 
-let isStudent = true; // Boolean
+```js
+function additionner(a, b) {
+  return a + b;
+}
+```
 
-let fruits = ["apple", "orange", "banana"]; // Array
+## Fonction fléchée
 
-let person = { firstName: "John", lastName: "Doe" }; // Object
+```js
+const additionner = (a, b) => a + b;
+```
+
+## Modules
+
+```js
+// Module export
+// fichier: math.js
+export const addition = (a, b) => a + b;
+
+// Module import
+// fichier: app.js
+import { addition } from "./math";
+console.log(addition(5, 3)); // 8
 ```
 
 ## Opérateurs
@@ -43,43 +73,6 @@ let isNotEqual = y !== 5;
 let andOperator = a && b;
 let orOperator = x || y;
 let notOperator = !isTrue;
-```
-
-## Fonctions
-
-```js
-function additionner(a, b) {
-  return a + b;
-}
-```
-
-## Fonction fléchée
-
-```js
-const additionner = (a, b) => a + b;
-```
-
-## Destructuration
-
-```js
-const personne = { nom: "John", age: 30 };
-```
-
-## Template literals ou littéraux de gabarit
-
-```js
-const message = `Hello, ${nom}!`;
-```
-
-## Classes
-
-```js
-class Personne {
-  constructor(nom, age) {
-    this.nom = nom;
-    this.age = age;
-  }
-}
 ```
 
 ## Promesses (Promise)
@@ -103,15 +96,22 @@ const faireQuelqueChose = () =>
   });
 ```
 
-## Modules
+## Template literals ou littéraux de gabarit
 
 ```js
-// Module export
-// fichier: math.js
-export const addition = (a, b) => a + b;
+const message = `Hello, ${nom}!`;
+```
 
-// Module import
-// fichier: app.js
-import { addition } from "./math";
-console.log(addition(5, 3)); // 8
+## Types de données
+
+```js
+let name = "John"; // String
+
+let age = 25; // Number
+
+let isStudent = true; // Boolean
+
+let fruits = ["apple", "orange", "banana"]; // Array
+
+let person = { firstName: "John", lastName: "Doe" }; // Object
 ```
