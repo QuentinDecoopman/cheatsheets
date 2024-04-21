@@ -9,6 +9,7 @@ Un ensemble de cheatsheets
 - [GIT](/GIT/GIT.md)
 - [HTML](/HTML/HTML.md)
 - [Javascript](/Javascript/JS.md)
+  - [Date](/Javascript/Date.md)
   - [Méthodes de tableaux](/Javascript/Méthodes%20de%20tableaux.md)
   - [POO](/Javascript/POO.md)
 - [Markdown](/Markdown/Markdown.md)
@@ -20,6 +21,7 @@ Un ensemble de cheatsheets
 - [Redux](/Redux/Redux.md)
 - [SCSS](/SCSS/SCSS.md)
 - [SQL](/SQL/SQL.md)
+- [Tailwind](/Tailwind/Tailwind.md)
 - [Terminal](/Terminal/Terminal.md)
 - [Typescript](/Typescript/Typescript.md)
 
@@ -34,5 +36,4 @@ Un ensemble de cheatsheets
 - React
 - Redux
 - Docker
-- Tailwind
 - GSAP

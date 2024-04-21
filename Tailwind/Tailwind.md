@@ -43,7 +43,7 @@ module.exports = {
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
-### Exemple d'un fichier html de base:
+## Exemple d'un fichier html de base:
 
 ```html
 <!DOCTYPE html>
@@ -58,4 +58,46 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
     Hello world!
   </h1>
 </html>
+```
+## Exemple de customisation (tailwind.config.js)
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#FF6347',
+        'secondary': '#6B7280',
+      },
+      fontFamily: {
+        'body': ['Roboto', 'sans-serif'],
+      },
+      spacing: {
+        '72': '18rem',
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+}
+```
+
+## Exemple de Mode Sombre
+```js
+<div class="dark:bg-gray-800 bg-gray-200 text-gray-700 dark:text-gray-200">
+  <!-- Contenu -->
+</div>
+```
+## Plugins officiel
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
+  ]
+}
 ```
