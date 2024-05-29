@@ -5,7 +5,7 @@ Un ensemble de cheatsheets & de notes personnelles.
 ## Index
 
 - [CSS](/CSS/CSS.md)
-- [Express](/express/Express.md)
+- [Express](/Express/Express.md)
 - [GIT](/GIT/GIT.md)
 - [HTML](/HTML/HTML.md)
 - [Javascript](/Javascript/JS.md)
@@ -16,7 +16,7 @@ Un ensemble de cheatsheets & de notes personnelles.
 - [MongoDB](/MongoDB/Mongo.md)
 - [Node](/Node/Node.md)
 - [PHP](/PHP/PHP.md)
-- [Python](/Python//Python.md)
+- [Python](/Python/Python.md)
 - [React](/React/React.md)
 - [Redux](/Redux/Redux.md)
 - [SCSS](/SCSS/SCSS.md)
