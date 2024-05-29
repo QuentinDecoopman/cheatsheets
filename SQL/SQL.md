@@ -16,7 +16,6 @@ CREATE TABLE nom_table (
 ## Insertion de données
 
 ```sql
-
 INSERT INTO nom_table (colonne1, colonne2, ...)
 VALUES (valeur1, valeur2, ...);
 ```
