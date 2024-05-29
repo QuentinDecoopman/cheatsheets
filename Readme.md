@@ -1,6 +1,6 @@
-# Liste de cheatsheet
+# Cheatsheet & doc
 
-Un ensemble de cheatsheets
+Un ensemble de cheatsheets & de notes personnelles.
 
 ## Index
 
@@ -9,7 +9,7 @@ Un ensemble de cheatsheets
 - [GIT](/GIT/GIT.md)
 - [HTML](/HTML/HTML.md)
 - [Javascript](/Javascript/JS.md)
-  - [Date](/Javascript/Date.md)
+  - [Dates](/Javascript/Date.md)
   - [Méthodes de tableaux](/Javascript/Méthodes%20de%20tableaux.md)
   - [POO](/Javascript/POO.md)
 - [Markdown](/Markdown/Markdown.md)
@@ -29,6 +29,7 @@ Un ensemble de cheatsheets
 
 - [Chronologie des langages](ChronologieLangage.md)
 - [Langages de programmation exotiques](LangagesExotique.md)
+- [Lexique](Lexique.md)
 
 ## Ajout et / ou correction prévus
 
