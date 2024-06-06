@@ -38,3 +38,6 @@ Un ensemble de cheatsheets & de notes personnelles.
 - Redux
 - Docker
 - GSAP
+- Conception BDD
+- Unicode
+- Next.js

@@ -62,7 +62,7 @@ fs.writeFile("chemin/vers/fichier.txt", "Contenu à écrire", (err) => {
 });
 ```
 
-## HTTP
+## Serveur HTTP
 
 ```js
 const http = require("http");
