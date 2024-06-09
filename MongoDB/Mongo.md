@@ -1,7 +1,7 @@
 # Cheatsheet MongoDB
 
 [Doc](https://docs.mongodb.com)
-[index](./Readme.md)
+[index](/Readme.md)
 
 ## Vocabulaire
 
