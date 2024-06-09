@@ -4,7 +4,7 @@
 
 1er étapes lors de la création d'une base de données...
 
-## Définition de MCD (Modèle Conceptuel des Données)
+## Définition du MCD (Modèle Conceptuel des Données)
 
 Le MCD est une représentation graphique de haut niveau qui permet facilement et simplement de comprendre comment les différents éléments sont liés entre eux.
 
