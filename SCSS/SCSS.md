@@ -1,7 +1,7 @@
 # Cheatsheet SCSS (SASS)
 
 - [Index](/Readme.md)
-- [doc](https://sass-lang.com/)
+- [Doc](https://sass-lang.com/)
 
 ## Variables
 
