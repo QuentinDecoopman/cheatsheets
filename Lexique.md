@@ -147,6 +147,7 @@
 | Routage                       | Processus de sélection du meilleur chemin pour transmettre des données entre les réseaux, réalisé par des appareils appelés routeurs.           |
 | Pare-feu                      | Dispositif de sécurité réseau qui surveille et contrôle le trafic entrant et sortant, basé sur un ensemble de règles de sécurité prédéfinies.   |
 | VPN (Virtual Private Network) | Réseau privé virtuel permettant de créer une connexion sécurisée et chiffrée entre des appareils distants via un réseau public, comme Internet. |
+|Lightweight Directory Access Protocol (LDAP)|Protocole de communication utilisé pour accéder et gérer des annuaires informatiques, souvent utilisé pour l'auth et la gestion des users dans les app Web. |
 
 ### SÉCURITÉ
 
