@@ -45,3 +45,6 @@ Un ensemble de cheatsheets & de notes personnelles.
 - Conception BDD
 - Unicode
 - Next.js
+- Test
+  - Cypress
+  - Jest
