@@ -27,6 +27,9 @@ Un ensemble de cheatsheets & de notes personnelles.
 - [SQL](SQL/SQL.md)
 - [Tailwind](Tailwind/Tailwind.md)
 - [Terminal](Terminal/Terminal.md)
+- Test
+  - E2E
+    - [Cypress](Tests/E2e/Cypress.md)
 - [Typescript](Typescript/Typescript.md)
 
 ## Culture générale
@@ -37,13 +40,8 @@ Un ensemble de cheatsheets & de notes personnelles.
 
 ## Ajout et / ou correction prévus
 
-- POO javascript
-- React
-- Redux
 - Docker
 - GSAP
-- Conception BDD
-- Unicode
 - Next.js
 - Test
   - Cypress
