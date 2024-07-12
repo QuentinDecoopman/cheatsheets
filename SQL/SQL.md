@@ -88,7 +88,6 @@ WHERE condition;
 ## Filtrage avec LIKE
 
 ```sql
-
 SELECT colonne1, colonne2, ...
 FROM nom_table
 WHERE colonne LIKE 'valeur%';

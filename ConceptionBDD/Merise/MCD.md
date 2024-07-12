@@ -35,4 +35,4 @@ Cet outil permet d’échanger entre informaticiens et non-informaticiens sur l�
 - 2nd NF stipule que les attributs non-clés doivent dépendre entièrement de la clé primaire
   
 
-- Définition des Cardinalités entre les entités :couple de caractères (0 ou 1 ou N), de chaque côté de l’association = expriment le nombre maximum et minimum de fois qu’une occurrence d’une entité participe à une relation
+- Définition des Cardinalités entre les entités :couple de caractères (0 ou 1 ou N), de chaque côté de l’association = expriment le nombre maximum et minimum de fois qu’une occurrence d’une entité participe à une relation.
