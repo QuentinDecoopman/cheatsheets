@@ -18,6 +18,7 @@ Un ensemble de cheatsheets & de notes personnelles.
   - [POO](Javascript/POO.md)
 - [Markdown](Markdown/Markdown.md)
 - [MongoDB](MongoDB/Mongo.md)
+- [Next](Next.js/Nextjs.md)
 - [Node](Node/Node.md)
 - [PHP](PHP/PHP.md)
 - [Python](Python/Python.md)
@@ -30,6 +31,9 @@ Un ensemble de cheatsheets & de notes personnelles.
 - Test
   - E2E
     - [Cypress](Tests/E2e/Cypress.md)
+  - Unitaires
+    - [Jest](Tests/Unitaires/Jest.md)
+  
 - [Typescript](Typescript/Typescript.md)
 
 ## Culture générale
@@ -42,7 +46,3 @@ Un ensemble de cheatsheets & de notes personnelles.
 
 - Docker
 - GSAP
-- Next.js
-- Test
-  - Cypress
-  - Jest
