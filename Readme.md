@@ -5,9 +5,9 @@ Un ensemble de cheatsheets & de notes personnelles.
 ## Index
 
 - ConceptionBDD
-  - [MCD](ConceptionBDD/Merise/MCD.md)
-  - [Merise](ConceptionBDD/Merise/Merise.md)
-  - [MLD](ConceptionBDD/Merise/MLD.md)
+  - [MCD](ConceptionBDD/MCD.md)
+  - [Merise](ConceptionBDD/Merise.md)
+  - [MLD](ConceptionBDD/MLD.md)
 - [CSS](CSS/CSS.md)
 - [Express](Express/Express.md)
 - [GIT](GIT/GIT.md)
@@ -18,6 +18,7 @@ Un ensemble de cheatsheets & de notes personnelles.
   - [POO](Javascript/POO.md)
 - [Markdown](Markdown/Markdown.md)
 - [MongoDB](MongoDB/Mongo.md)
+- [Next](Next.js/Nextjs.md)
 - [Node](Node/Node.md)
 - [PHP](PHP/PHP.md)
 - [Python](Python/Python.md)
@@ -27,6 +28,12 @@ Un ensemble de cheatsheets & de notes personnelles.
 - [SQL](SQL/SQL.md)
 - [Tailwind](Tailwind/Tailwind.md)
 - [Terminal](Terminal/Terminal.md)
+- Test
+  - E2E
+    - [Cypress](Tests/E2e/Cypress.md)
+  - Unitaires
+    - [Jest](Tests/Unitaires/Jest.md)
+  
 - [Typescript](Typescript/Typescript.md)
 
 ## Culture générale
@@ -37,17 +44,5 @@ Un ensemble de cheatsheets & de notes personnelles.
 
 ## Ajout et / ou correction prévus
 
-- POO javascript
-- React
-- Redux
 - Docker
 - GSAP
-- Conception BDD
-- Unicode
-- Next.js
-- Rust
-- Java
-- C#
-- Test
-  - Cypress
-  - Jest
