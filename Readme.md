@@ -41,8 +41,3 @@ Un ensemble de cheatsheets & de notes personnelles.
 - [Chronologie des langages](ChronologieLangage.md)
 - [Langages de programmation exotiques](LangagesExotique.md)
 - [Lexique](Lexique.md)
-
-## Ajout et / ou correction prévus
-
-- Docker
-- GSAP
