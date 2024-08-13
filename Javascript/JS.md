@@ -8,10 +8,10 @@
 
 ```js
 class Personne {
-  constructor(nom, age) {
-    this.nom = nom;
-    this.age = age;
-  }
+    constructor(nom, age) {
+        this.nom = nom;
+        this.age = age;
+    }
 }
 ```
 
@@ -26,14 +26,14 @@ const y = 20;
 ## Destructuration
 
 ```js
-const personne = { nom: "John", age: 30 };
+const personne = {nom: "John", age: 30};
 ```
 
 ## Fonctions
 
 ```js
 function additionner(a, b) {
-  return a + b;
+    return a + b;
 }
 ```
 
@@ -52,7 +52,8 @@ export const addition = (a, b) => a + b;
 
 // Module import
 // fichier: app.js
-import { addition } from "./math";
+import {addition} from "./math";
+
 console.log(addition(5, 3)); // 8
 ```
 
@@ -79,21 +80,21 @@ let notOperator = !isTrue;
 
 ```js
 function faireQuelqueChose() {
-  return new Promise(function (resolve, reject) {
-    // Logique asynchrone
-    if (condition) {
-      resolve("Succès");
-    } else {
-      reject("Échec");
-    }
-  });
+    return new Promise(function (resolve, reject) {
+        // Logique asynchrone
+        if (condition) {
+            resolve("Succès");
+        } else {
+            reject("Échec");
+        }
+    });
 }
 
 const faireQuelqueChose = () =>
-  new Promise((resolve, reject) => {
-    // Logique asynchrone
-    condition ? resolve("Succès") : reject("Échec");
-  });
+    new Promise((resolve, reject) => {
+        // Logique asynchrone
+        condition ? resolve("Succès") : reject("Échec");
+    });
 ```
 
 ## Template literals ou littéraux de gabarit
@@ -113,5 +114,20 @@ let isStudent = true; // Boolean
 
 let fruits = ["apple", "orange", "banana"]; // Array
 
-let person = { firstName: "John", lastName: "Doe" }; // Object
+let person = {firstName: "John", lastName: "Doe"}; // Object
+```
+
+## Console
+
+```js
+console.log("Bonjour !");
+console.assert(assertion, message) // permet d'afficher un message et la trace d'appel si l'expression passée retourne false.
+console.count(label) // permet de compter le nombre de fois que la ligne a été exécutée. Si vous passez une variable, ici label, elle affichera le nombre de fois elle a été appelée en redémarrant à 0 à chaque fois que la valeur de label sera modifiée.
+console.error(message) // permet d'afficher un message d'erreur en rouge dans la console du navigateur.
+console.table(tableau) // permet d'afficher les tableaux sous forme de tableau avec deux colonnes : une pour les index et un pour les valeurs associées.
+console.time() & console.timeEnd()
+// Ces méthodes permettent de démarrer un timer (console.time()) puis de le terminer (timeEnd()) et d'afficher le temps d'exécution entre les deux.
+console.trace() //permet d'afficher la trace d'appel. Nous y reviendrons, mais en deux mots c'est l'ordre d'appel et d'exécution des fonctions.
+console.warn(message) // permet d'afficher un message d'avertissement dans la console du navigateur.
+console.info(message) // permet d'afficher un message d'information dans la console du navigateur.
 ```

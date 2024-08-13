@@ -20,7 +20,7 @@ Concrètement Merise (que l’on prononce Meurise) permet de :
 
 - Décrire le fonctionnement du système à informatiser et notamment :
 
-    - Les données (MCD) : quelles sont les relations et les dépendances entres les différents acteurs (client –
+    - Les données (MCD) : quelles sont les relations et les dépendances entre les différents acteurs (client –
       commande – produit – fournisseur par exemple)
 
 
