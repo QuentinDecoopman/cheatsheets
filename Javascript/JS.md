@@ -117,17 +117,128 @@ let fruits = ["apple", "orange", "banana"]; // Array
 let person = {firstName: "John", lastName: "Doe"}; // Object
 ```
 
+## Maps
+
+Accepte tous les types
+
+````js
+const map = new Map();
+
+map.set('1', 'value1');    // une clé de type chaîne
+map.set(1, 'value2');      // une clé numérique
+map.set(true, 'value3');  // une clé de type booléen
+
+console.log(map.get(1)); // 'value1'
+console.log(map.get('1')); // 'value2'
+console.log(map.size); // 'value3'
+````
+
+````js
+// Création
+
+const maMap = new Map();
+
+// set(clé,valeur) Ajoute une paire clé valeur ou mise à jour si existe déjà 
+maMap.set(4, "quatre");
+
+// get(clé) Récupère la valeur associée à une clé donnée.
+console.log(maMap.get(2)); // "deux"
+
+// has(clé) : Vérifie si une clé existe dans la map.
+console.log(maMap.has(1)); // true
+
+// clear Supprime toutes les paires de la map.
+
+// Itération sur une Map
+
+for (const [cle, valeur] of maMap) {
+    console.log(`${cle}: ${valeur}`);
+}
+````
+
+## Sets
+
+Collection de valeurs uniques ne pouvant apparaître 1 seule fois.
+Utile pour supprimer doublons dans une collection de data.
+
+````js
+const ensemble = new Set();
+
+const jean = {nom: "Jean"};
+const paul = {nom: "Paul"};
+const marie = {nom: "Marie"};
+
+ensemble.add(jean);
+ensemble.add(paul);
+ensemble.add(marie);
+ensemble.add(jean);
+ensemble.add(marie);
+
+console.log(ensemble.size); // 3
+
+for (let utilisateur of ensemble) {
+    console.log(utilisateur.nom); // Jean, Paul, Marie
+}
+
+const ensemble = new Set(["tesla", "renault", "ds"]);
+
+for (let valeur of ensemble) console.log(valeur);
+
+// La même chose avec forEach :
+ensemble.forEach((valeur, valeurEncore, ensemble) => {
+    console.log(valeur);
+});
+````
+
+````js
+
+````
+
 ## Console
 
 ```js
 console.log("Bonjour !");
-console.assert(assertion, message) // permet d'afficher un message et la trace d'appel si l'expression passée retourne false.
-console.count(label) // permet de compter le nombre de fois que la ligne a été exécutée. Si vous passez une variable, ici label, elle affichera le nombre de fois elle a été appelée en redémarrant à 0 à chaque fois que la valeur de label sera modifiée.
-console.error(message) // permet d'afficher un message d'erreur en rouge dans la console du navigateur.
-console.table(tableau) // permet d'afficher les tableaux sous forme de tableau avec deux colonnes : une pour les index et un pour les valeurs associées.
-console.time() & console.timeEnd()
+console.assert(assertion, message); // permet d'afficher un message et la trace d'appel si l'expression passée retourne false.
+console.count(label); // permet de compter le nombre de fois que la ligne a été exécutée. Si vous passez une variable, ici label, elle affichera le nombre de fois elle a été appelée en redémarrant à 0 à chaque fois que la valeur de label sera modifiée.
+console.error(message); // permet d'afficher un message d'erreur en rouge dans la console du navigateur.
+console.table(tableau); // permet d'afficher les tableaux sous forme de tableau avec deux colonnes : une pour les index et un pour les valeurs associées.
+console.time() & console.timeEnd();
 // Ces méthodes permettent de démarrer un timer (console.time()) puis de le terminer (timeEnd()) et d'afficher le temps d'exécution entre les deux.
-console.trace() //permet d'afficher la trace d'appel. Nous y reviendrons, mais en deux mots c'est l'ordre d'appel et d'exécution des fonctions.
-console.warn(message) // permet d'afficher un message d'avertissement dans la console du navigateur.
-console.info(message) // permet d'afficher un message d'information dans la console du navigateur.
+console.trace(); //permet d'afficher la trace d'appel. Nous y reviendrons, mais en deux mots c'est l'ordre d'appel et d'exécution des fonctions.
+console.warn(message); // permet d'afficher un message d'avertissement dans la console du navigateur.
+console.info(message); // permet d'afficher un message d'information dans la console du navigateur.
 ```
+
+## Opérateur de coalescence des nuls
+
+Permet de définir une valeur par défaut.
+
+```js
+let uneVariable;
+console.log(uneVariable ?? "Non défini"); // "Non défini" (uneVariable est undefined)
+
+const utilisateur = "Jean";
+console.log(utilisateur ?? "Inconnu"); // "Jean" (utilisateur n'est pas null/undefined)
+```
+
+## Opérateur de chaînage optionnel
+
+Permet d'accéder à une prop dans un objet même si valeur intermédiaire n'existe pas.
+
+```js
+// Exemple
+let street;
+
+if (user && user.details && user.details.address) {
+    street = user.details.address.street;
+}
+
+console.log(street); // "Rue de Rivoli" si toutes les propriétés existent, sinon `undefined`
+
+// avec le chaînage optionnel
+let street = user?.details?.address?.street;
+
+console.log(street); // "Rue de Rivoli" si toutes les propriétés existent, sinon `undefined`
+```
+
+A utiliser avec parcimonie, possible création de bug fantômes.
