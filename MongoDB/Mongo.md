@@ -39,6 +39,24 @@ mongosh "mongodb://192.168.1.1:27017"
 mongosh "mongodb+srv://cluster-name.abcde.mongodb.net/<dbname>" --apiVersion 1 --username <username> # MongoDB Atlas
 ```
 
+## Connection avec mongoose
+
+```js
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(
+    "url de cluster atlas"
+  )
+  .then(() => {
+    console.log("CONNEXION DB OK !");
+  })
+  .catch(() => {
+    console.log("CONNEXION KO !");
+  });
+
+```
+
 ## Afficher les Bases de données
 
 ```bash
