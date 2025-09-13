@@ -190,10 +190,6 @@ ensemble.forEach((valeur, valeurEncore, ensemble) => {
 });
 ````
 
-````js
-
-````
-
 ## Console
 
 ```js
@@ -242,3 +238,17 @@ console.log(street); // "Rue de Rivoli" si toutes les propriétés existent, sin
 ```
 
 A utiliser avec parcimonie, possible création de bug fantômes.
+
+## Vérification des types
+
+```js
+typeof 42;                // "number"
+typeof null;              // "object" (quirk!)
+Array.isArray([]);        // true
+ 
+if (val == null) {
+  // true for null or undefined
+}
+ 
+val !== null && typeof val === 'object';
+```

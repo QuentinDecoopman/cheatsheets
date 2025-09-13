@@ -174,3 +174,28 @@
   <p>Contenu de la nav.</p>
 </main>
 ```
+
+## Formulaires
+
+```html
+
+<form action="/submit" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="50">
+ 
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+ 
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+ 
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+ 
+  <input type="submit" value="Submit">
+</form>
+```
