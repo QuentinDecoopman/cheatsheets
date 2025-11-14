@@ -41,8 +41,8 @@ Un ensemble de cheatsheets et de notes personnelles.
 - [Terminal](Terminal/Terminal.md)
 - [Nginx](Nginx/Nginx.md)
 - [SSH](SSH/SSH.md)
- - [PostgreSQL](PostgreSQL/PostgreSQL.md)
- - [Prisma (ORM)](ORM/prisma.md)
+- [PostgreSQL](PostgreSQL/PostgreSQL.md)
+- [Prisma (ORM)](ORM/prisma.md)
 - Tests
   - E2E
     - [Cypress](Tests/E2e/Cypress.md)
