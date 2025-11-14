@@ -21,7 +21,7 @@ Un ensemble de cheatsheets et de notes personnelles.
   - [POO](Javascript/POO.md)
 - [Markdown](Markdown/Markdown.md)
 - [MongoDB](MongoDB/Mongo.md)
-- [Next](Next.js/Nextjs.md)
+- [GraphQL](Graphql/GraphQl.md)
 - [Next.js](Next.js/Nextjs.md)
 - [Node](Node/Node.md)
 - [PHP](PHP/PHP.md)
@@ -41,6 +41,8 @@ Un ensemble de cheatsheets et de notes personnelles.
 - [Terminal](Terminal/Terminal.md)
 - [Nginx](Nginx/Nginx.md)
 - [SSH](SSH/SSH.md)
+ - [PostgreSQL](PostgreSQL/PostgreSQL.md)
+ - [Prisma (ORM)](ORM/prisma.md)
 - Tests
   - E2E
     - [Cypress](Tests/E2e/Cypress.md)
