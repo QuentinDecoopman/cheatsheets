@@ -1,4 +1,4 @@
-# Cheatsheets Java
+# Cheatsheet Java
 
 ## Syntaxe de base
 
@@ -81,4 +81,3 @@ for (int i = 0; i < 10; i++) {
 while (condition) {
     // instructions
 }
-```

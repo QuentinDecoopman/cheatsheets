@@ -2,6 +2,44 @@
 
 - [Index](/Readme.md)
 
+### Aussi appelé Modèle Entité‑Association
+
+Première étape lors de la création d'une base de données.
+
+## Définition du MCD (Modèle Conceptuel de Données)
+
+Le MCD est une représentation graphique de haut niveau qui permet de comprendre facilement comment les différents
+éléments sont liés entre eux.
+
+Faisant partie de la boîte à outils Merise, le MCD décrit les données utilisées par le système d'information et leurs
+relations. Les informations sont représentées logiquement en utilisant un ensemble de règles et de diagrammes codifiés :
+
+- Les entités (un rectangle = une entité).
+- Les attributs (la liste des données de l'entité).
+- Les relations qui précisent comment les entités sont reliées entre elles (associations).
+- Les cardinalités (indiquent le nombre minimum et maximum de participations d'une occurrence à une relation).
+
+Utilisé assez tôt en conception de base de données, le MCD sert de base de travail pour les autres outils de Merise
+(MLD, MPD). Le MCD constitue une étape importante de la modélisation : s'il est mal réalisé, des erreurs en cascade
+peuvent affecter le MLD, le MPD et la base finale.
+
+Le MCD facilite les échanges entre informaticiens et non‑informaticiens : à partir d'un MCD on peut valider et préciser
+les règles métier qui s'appliqueront à la future base de données.
+
+### Normalisation et réduction des redondances
+
+- 1re forme normale (1FN) : les valeurs d'un attribut sont atomiques (non divisibles) et chaque enregistrement est
+  identifiable.
+- 2e forme normale (2FN) : les attributs non‑clés doivent dépendre entièrement de la clé primaire.
+
+Les cardinalités sont généralement exprimées par des couples (min, max) ou par des symboles (0,1,N) de chaque côté
+d'une association.
+
+![Exemple de MCD](MCD.png "MCD")
+# MCD : Modèle conceptuel de données
+
+- [Index](/Readme.md)
+
 ### aussi appellé modèle entité association
 
 1er étapes lors de la création d'une base de données...

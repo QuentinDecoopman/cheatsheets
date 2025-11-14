@@ -202,4 +202,3 @@ except Exception as e:
     print(f"Une erreur s'est produite : {e}")
 finally:
     print("Cette partie sera exécutée quoi qu'il arrive.")
-```

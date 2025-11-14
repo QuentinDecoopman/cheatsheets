@@ -1,4 +1,4 @@
-# Cheatsheets Docker
+# Cheatsheet Docker
 
 - [Index](/Readme.md)
 - [Docs](https://docs.docker.com/)

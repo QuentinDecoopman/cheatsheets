@@ -130,4 +130,3 @@ let nullableNumber: number | null = null;
 if (typeof variable === "string") {
   // variable is a string here
 }
-```

@@ -2,6 +2,32 @@
 
 - [Index](/Readme.md)
 
+Merise est une méthode de modélisation utilisée pour analyser la structure à informatiser et cadrer les projets
+informatiques. Elle facilite la communication entre utilisateurs et informaticiens en séparant les préoccupations
+et en proposant des représentations normalisées (MCD, MLD, MPD, etc.).
+
+Créée dans les années 1970, Merise a été largement utilisée en France et en Europe pour structurer des projets de
+grande envergure. Elle s'appuie sur le modèle relationnel et aide à concevoir des bases de données cohérentes.
+
+Concrètement, Merise permet de :
+
+- Hiérarchiser les préoccupations du projet.
+- Décrire le fonctionnement du système à informatiser :
+  - Les données (MCD) : relations et dépendances entre acteurs (ex. client – commande – produit – fournisseur).
+  - Les traitements (MCT) : flux et processus métier (ex. comment une commande est traitée).
+- Proposer une implémentation logique (MLD) puis physique (MPD) des données.
+
+Les niveaux principaux sont :
+
+- **MCD** : conceptuel, se concentre sur les entités et leurs relations.
+- **MLD** : logique, définit les tables, attributs et contraintes d'intégrité.
+- **MPD** : physique, précise les types de données, index, clés et optimisations liées au SGBD.
+
+Ces niveaux permettent de passer d'une vue métier à une implémentation technique de manière structurée.
+# Méthode Merise
+
+- [Index](/Readme.md)
+
 Merise est une méthode informatique dédiée à la modélisation qui analyse la structure à informatiser en terme de
 systèmes. Le gros avantage de cette méthode est qu’elle permet de cadrer le projet informatique et de « discuter » en se
 comprenant entre utilisateurs et informaticiens.

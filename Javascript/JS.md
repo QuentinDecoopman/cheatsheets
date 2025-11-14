@@ -8,10 +8,10 @@
 
 ```js
 class Personne {
-    constructor(nom, age) {
-        this.nom = nom;
-        this.age = age;
-    }
+  constructor(nom, age) {
+    this.nom = nom;
+    this.age = age;
+  }
 }
 ```
 
@@ -26,14 +26,14 @@ const y = 20;
 ## Destructuration
 
 ```js
-const personne = {nom: "John", age: 30};
+const personne = { nom: "John", age: 30 };
 ```
 
 ## Fonctions
 
 ```js
 function additionner(a, b) {
-    return a + b;
+  return a + b;
 }
 ```
 
@@ -52,7 +52,7 @@ export const addition = (a, b) => a + b;
 
 // Module import
 // fichier: app.js
-import {addition} from "./math";
+import { addition } from "./math";
 
 console.log(addition(5, 3)); // 8
 ```
@@ -80,21 +80,21 @@ let notOperator = !isTrue;
 
 ```js
 function faireQuelqueChose() {
-    return new Promise(function (resolve, reject) {
-        // Logique asynchrone
-        if (condition) {
-            resolve("Succès");
-        } else {
-            reject("Échec");
-        }
-    });
+  return new Promise(function (resolve, reject) {
+    // Logique asynchrone
+    if (condition) {
+      resolve("Succès");
+    } else {
+      reject("Échec");
+    }
+  });
 }
 
 const faireQuelqueChose = () =>
-    new Promise((resolve, reject) => {
-        // Logique asynchrone
-        condition ? resolve("Succès") : reject("Échec");
-    });
+  new Promise((resolve, reject) => {
+    // Logique asynchrone
+    condition ? resolve("Succès") : reject("Échec");
+  });
 ```
 
 ## Template literals ou littéraux de gabarit
@@ -114,81 +114,72 @@ let isStudent = true; // Boolean
 
 let fruits = ["apple", "orange", "banana"]; // Array
 
-let person = {firstName: "John", lastName: "Doe"}; // Object
+let person = { firstName: "John", lastName: "Doe" }; // Object
 ```
 
 ## Maps
 
 Accepte tous les types
 
-````js
+```js
 const map = new Map();
 
-map.set('1', 'value1');    // une clé de type chaîne
-map.set(1, 'value2');      // une clé numérique
-map.set(true, 'value3');  // une clé de type booléen
+map.set("1", "value1"); // clé chaîne
+map.set(1, "value2"); // clé numérique
+map.set(true, "value3"); // clé booléen
 
-console.log(map.get(1)); // 'value1'
-console.log(map.get('1')); // 'value2'
-console.log(map.size); // 'value3'
-````
+console.log(map.get("1")); // 'value1'
+console.log(map.get(1)); // 'value2'
+console.log(map.size); // 3
+```
 
-````js
+```js
 // Création
-
 const maMap = new Map();
 
-// set(clé,valeur) Ajoute une paire clé valeur ou mise à jour si existe déjà 
 maMap.set(4, "quatre");
+maMap.set(2, "deux");
 
-// get(clé) Récupère la valeur associée à une clé donnée.
 console.log(maMap.get(2)); // "deux"
-
-// has(clé) : Vérifie si une clé existe dans la map.
-console.log(maMap.has(1)); // true
-
-// clear Supprime toutes les paires de la map.
+console.log(maMap.has(1)); // false
 
 // Itération sur une Map
-
 for (const [cle, valeur] of maMap) {
-    console.log(`${cle}: ${valeur}`);
+  console.log(`${cle}: ${valeur}`);
 }
-````
+```
 
 ## Sets
 
 Collection de valeurs uniques ne pouvant apparaître 1 seule fois.
 Utile pour supprimer doublons dans une collection de data.
 
-````js
+```js
 const ensemble = new Set();
 
-const jean = {nom: "Jean"};
-const paul = {nom: "Paul"};
-const marie = {nom: "Marie"};
+const jean = { nom: "Jean" };
+const paul = { nom: "Paul" };
+const marie = { nom: "Marie" };
 
 ensemble.add(jean);
 ensemble.add(paul);
 ensemble.add(marie);
-ensemble.add(jean);
-ensemble.add(marie);
+ensemble.add(jean); // tentative d'ajout en double
 
 console.log(ensemble.size); // 3
 
 for (let utilisateur of ensemble) {
-    console.log(utilisateur.nom); // Jean, Paul, Marie
+  console.log(utilisateur.nom); // Jean, Paul, Marie
 }
 
-const ensemble = new Set(["tesla", "renault", "ds"]);
+const marques = new Set(["tesla", "renault", "ds"]);
+for (let valeur of marques) console.log(valeur);
 
-for (let valeur of ensemble) console.log(valeur);
-
-// La même chose avec forEach :
-ensemble.forEach((valeur, valeurEncore, ensemble) => {
-    console.log(valeur);
+// forEach
+marques.forEach((valeur) => {
+  console.log(valeur);
 });
-````
+```
 
 ## Console
 
@@ -226,7 +217,7 @@ Permet d'accéder à une prop dans un objet même si valeur intermédiaire n'exi
 let street;
 
 if (user && user.details && user.details.address) {
-    street = user.details.address.street;
+  street = user.details.address.street;
 }
 
 console.log(street); // "Rue de Rivoli" si toutes les propriétés existent, sinon `undefined`
@@ -242,13 +233,12 @@ A utiliser avec parcimonie, possible création de bug fantômes.
 ## Vérification des types
 
 ```js
-typeof 42;                // "number"
-typeof null;              // "object" (quirk!)
-Array.isArray([]);        // true
- 
+typeof 42; // "number"
+typeof null; // "object" (quirk!)
+Array.isArray([]); // true
+
 if (val == null) {
   // true for null or undefined
 }
- 
-val !== null && typeof val === 'object';
-```
+
+val !== null && typeof val === "object";

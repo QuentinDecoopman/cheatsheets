@@ -3,11 +3,12 @@
 - [Index](/Readme.md)
 - [Doc](https://fr.react.dev/)
 
-## Installation
-
 ```bash
 npx create-react-app nom-du-projet
 
+npm create vite@latest
+```bash
+npx create-react-app nom-du-projet
 npm create vite@latest
 ```
 
@@ -15,7 +16,7 @@ npm create vite@latest
 
 ```jsx
 import React from "react";
-
+import React from "react";
 function MonComposant(props) {
   return (
     <div>
@@ -30,7 +31,7 @@ function MonComposant(props) {
 
 ```jsx
 import React, { Component } from "react";
-
+import React, { Component } from "react";
 class MonComposantClasse extends Component {
   render() {
     return (
@@ -47,13 +48,13 @@ class MonComposantClasse extends Component {
 
 ```jsx
 <MonComposant titre="Titre" contenu="Contenu du composant" />
-```
+<MonComposant titre="Titre" contenu="Contenu du composant" />
 
 ## État (State) :
 
 ```jsx
 import React, { useState } from "react";
-
+import React, { useState } from "react";
 function ComposantAvecEtat() {
   const [count, setCount] = useState(0);
 
@@ -72,9 +73,9 @@ function ComposantAvecEtat() {
 
 ```jsx
 function ComposantAvecEvenement() {
-  const handleClick = () => {
+  function ComposantAvecEvenement() {
     // Code à exécuter lors du clic
-  };
+  }
 
   return <button onClick={handleClick}>Cliquez-moi</button>;
 }
@@ -84,17 +85,17 @@ function ComposantAvecEvenement() {
 
 ```jsx
 function handleChange(event) {
-  // Code à exécuter lors du changement
+function handleChange(event) {
 }
 
 return <input type="text" onChange={handleChange} />;
-```
+return <input type="text" onChange={handleChange} />;
 
 ## Rendu conditionnel :
 
 ```jsx
 function ComposantConditionnel({ condition }) {
-  return <div>{condition ? <p>Vrai</p> : <p>Faux</p>}</div>;
+function ComposantConditionnel({ condition }) {
 }
 ```
 
@@ -102,7 +103,7 @@ function ComposantConditionnel({ condition }) {
 
 ```jsx
 function ListeDeComposants({ elements }) {
-  return (
+function ListeDeComposants({ elements }) {
     <ul>
       {elements.map((element, index) => (
         <li key={index}>{element}</li>
@@ -116,7 +117,7 @@ function ListeDeComposants({ elements }) {
 
 ```jsx
 function ComposantAvecEtatEtProps({ props }) {
-  const [count, setCount] = useState(0);
+function ComposantAvecEtatEtProps({ titre }) {
 
   const handleClick = () => {
     setCount(count + 1);
@@ -136,7 +137,7 @@ function ComposantAvecEtatEtProps({ props }) {
 
 ```jsx
 import React, { useState } from "react";
-
+import React, { useState } from "react";
 function Formulaire() {
   const [valeur, setValeur] = useState("");
 
@@ -165,7 +166,7 @@ function Formulaire() {
 ```js
 // Import du hook
 import React, { useState } from "react";
-
+import React, { useState } from "react";
 const MonComposant = () => {
   // Init le state à 0
   const [compteur, setCompteur] = useState(0);
@@ -191,7 +192,7 @@ const MonComposant = () => {
 // Permet d'effectuer des opérations de côté (effets) dans les composants fonctionnels.
 // import du hook
 import React, { useEffect } from "react";
-
+import React, { useEffect } from "react";
 useEffect(() => {
   // Effet
   return () => {
@@ -207,7 +208,7 @@ useEffect(() => {
 
 // Création d'un contexte
 import React, { createContext } from "react";
-
+import React, { createContext } from "react";
 const MonContexte = createContext();
 
 // Déclaration d'une valeur avec Provider
@@ -221,7 +222,7 @@ const MonComposant = () => {
 
 // Utilisation de useContext dans un composant
 import React, { useContext } from "react";
-
+import React, { useContext } from "react";
 const MonComposant = () => {
   const valeurContexte = useContext(MonContexte);
 
@@ -239,14 +240,14 @@ const MonComposant = () => {
 // Gère l'état d'un composant fonctionnel de manière plus avancée.
 
 const [state, dispatch] = useReducer(reducer, initialState);
-```
+const [state, dispatch] = useReducer(reducer, initialState);
 
 ### useCallback
 
 ```js
 // Memoize une fonction pour éviter sa recréation à chaque rendu.
 const memoizedCallback = useCallback(() => {
-  // Fonction
+const memoizedCallback = useCallback(() => {
 }, []);
 ```
 
@@ -256,7 +257,7 @@ const memoizedCallback = useCallback(() => {
 // Memoize la valeur calculée d'une expression pour éviter le recalcul inutile.
 
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
-```
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 ### useRef
 
@@ -264,7 +265,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 // Crée un objet ref pour accéder à un élément DOM ou pour maintenir une valeur mutable.
 
 const myRef = useRef(initialValue);
-```
+const myRef = useRef(initialValue);
 
 ## Requête fetch
 
@@ -366,7 +367,7 @@ const fetchData = async () => {
       method: "DELETE",
     });
 
-    const result = await response.data;
+    const result = await response.json();
 
     console.log("DELETE request result:", result);
   } catch (error) {
@@ -455,4 +456,3 @@ const fetchData = async () => {
     console.log("Error making DELETE request:", error);
   }
 };
-```

@@ -1,5 +1,7 @@
 # Cheatsheet SQL
 
+# Cheatsheet SQL
+
 - [Index](/Readme.md)
 - [Doc](https://sql.sh/)
 
@@ -121,4 +123,3 @@ mysqldump -u utilisateur -p nom_base_de_donnees > backup.sql
 
 ### Importer une base de données
 mysql -u utilisateur -p nom_base_de_donnees < backup.sql
-```

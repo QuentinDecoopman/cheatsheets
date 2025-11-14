@@ -61,7 +61,7 @@
 define("CONSTANTE", "Valeur");
 ```
 
-````
+```
 
 ## Types de données :
 
@@ -70,7 +70,7 @@ define("CONSTANTE", "Valeur");
     Entiers : $integer = 42;
     Flottants : $float = 3.14;
     Booléens : $bool = true;
-````
+```
 
 ## Opérateurs :
 
@@ -166,4 +166,3 @@ define("CONSTANTE", "Valeur");
     include 'monFichier.php';
     require 'autreFichier.php';
 ?>
-```

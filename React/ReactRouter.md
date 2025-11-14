@@ -47,4 +47,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-```

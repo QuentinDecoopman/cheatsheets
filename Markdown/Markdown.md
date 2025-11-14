@@ -61,19 +61,19 @@
 
 ## Code
 
-````
+```
 Bloc de code
 ```langage
 Code ici
-````
+```
 
 Syntaxe colorée
 
-````
+```
 ```javascript
 const exemple = 'Syntaxe colorée';
 console.log(exemple);
-````
+```
 
 ## Lignes horizontales
 
@@ -119,4 +119,3 @@ Ceci est un exemple de note de bas de page[^1].
 ::: danger
 Ceci est un avertissement !
 :::
-```

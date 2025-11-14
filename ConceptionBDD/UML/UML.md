@@ -1,5 +1,36 @@
 # UML
 
+UML (Unified Modeling Language) est un langage de modélisation graphique utilisé pour concevoir, spécifier,
+visualiser et documenter les systèmes logiciels.
+
+Il offre une variété de diagrammes pour représenter différents aspects d'un système : cas d'utilisation, classes,
+objets, interactions, états-transitions, activités, composants, déploiement, etc.
+
+## Vues courantes
+
+- **Vue des cas d'utilisation (use-case view)** : se concentre sur les fonctionnalités offertes par le système du point
+  de vue de l'utilisateur.
+- **Vue logique (logical view)** : aussi appelée vue des classes, elle montre la structure interne du système (classes,
+  attributs, relations).
+- **Vue de processus (process view)** : met l'accent sur les aspects dynamiques et les interactions entre composants.
+
+## Types de diagrammes UML
+
+- Diagramme de cas d'utilisation (use-case diagram)
+- Diagramme de classes (class diagram)
+- Diagramme d'objets (object diagram)
+- Diagramme de séquence (sequence diagram)
+- Diagramme de collaboration (communication diagram)
+- Diagramme états-transitions (state machine diagram)
+- Diagramme d'activité (activity diagram)
+- Diagramme de composants (component diagram)
+- Diagramme de déploiement (deployment diagram)
+- Diagramme de packages (package diagram)
+
+Chaque type de diagramme sert un objectif précis et facilite la communication entre les parties prenantes
+(ex. conception, documentation, architecture, tests).
+# UML
+
 'UML (Unified Modeling Language) est un langage de modélisation graphique utilisé pour concevoir, spécifier, visualiser
 et documenter les systèmes logiciels.
 

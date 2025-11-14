@@ -47,8 +47,8 @@
     git checkout -b <nom_de_branche>
 
 pour créer et passer à une branche en une seule étape.)
-
-### Fusionner les modifications d'une branche dans une autre :
+git config --global user.name "Votre Nom"
+git config --global user.email "votre.email@exemple.com"
 
     git merge <nom_de_branche>
 

@@ -39,7 +39,7 @@ parent enfant {
 
 /* Sélection par pseudo-éléments */
 ::before {
-    content: 'Texte avant l'élément';
+    content: "Texte avant l'élément";
 }
 ```
 
@@ -173,4 +173,3 @@ box-shadow: 2px 2px 4px #888888;
   bottom: 0;
   right: 0;
 }
-```

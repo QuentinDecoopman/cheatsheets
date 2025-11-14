@@ -430,4 +430,3 @@ const iterator = arr.values();
 for (const value of iterator) {
   console.log(value);
 } //renvoie: Pomme, Poire, Banane
-```

@@ -8,7 +8,7 @@
 | `Mongo`                                   | `Postgres`          | Explications                                                                                                              |
 | ----------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | `Mongod`                                  | `Postgres`          | Le serveur SGBD (service), tourne en tâche de fond                                                                        |
-| `mongosh` (Mongo Shell)                   | `psql`              | Client CLI pour se connecter à notre seveur                                                                               |
+| `mongosh` (Mongo Shell)                   | `psql`              | Client CLI pour se connecter à notre serveur                                                                              |
 | `mongodb`                                 | `pg`                | Client Node.js                                                                                                            |
 | `Mongo Compass`                           | `BDeaver`           | Client GUI                                                                                                                |
 | `COLLECTION`                              | `TABLE`             | Structures dans la BDD                                                                                                    |
@@ -23,7 +23,7 @@
 | `db.<collection_name>.find()`             | `SELECT FROM`       | Query une table/collection                                                                                                |
 | `ObjectId("657ad2696230579e7e255480")`    | `ID INTEGER`        | L'avantage d'un ObjectId est qu'il [encode la date de création](https://nddapp.com/object-id-to-timestamp-converter.html) |
 | `Dump`                                    | `Script SQL`        | Une sauvegarde de l'état de la BDD                                                                                        |
-| `exit` / double `CTLR + C` / `CTRL + D`   | `CTLR + D`          | Quiter le CLI `mongosh`                                                                                                   |
+| `exit` / double `CTRL + C` / `CTRL + D`   | `CTRL + D`          | Quitter le CLI `mongosh`                                                                                                  |
 
 ## Connectez-vous via mongosh
 
@@ -45,16 +45,13 @@ mongosh "mongodb+srv://cluster-name.abcde.mongodb.net/<dbname>" --apiVersion 1 -
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(
-    "url de cluster atlas"
-  )
+  .connect("url de cluster atlas")
   .then(() => {
     console.log("CONNEXION DB OK !");
   })
   .catch(() => {
     console.log("CONNEXION KO !");
   });
-
 ```
 
 ## Afficher les Bases de données

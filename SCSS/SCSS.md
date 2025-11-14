@@ -97,4 +97,3 @@ $primary-color: #3498db;
 body {
   color: $primary-color;
 }
-```

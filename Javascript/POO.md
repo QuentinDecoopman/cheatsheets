@@ -52,7 +52,7 @@ voiture.start();
 
 Permet de partager des features avec plusieurs classes.
 
-````js
+```js
 class A {
 }
 
@@ -74,4 +74,3 @@ const instanceB = new B();
 
 instanceA.methode1();
 instanceB.methode2();
-````

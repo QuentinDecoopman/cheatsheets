@@ -92,4 +92,3 @@ cy.wait('@loginRequest').its('response.statusCode').should('eq', 200);
 cy.fixture('example.json').then((data) => {
   cy.get('input[name=firstName]').type(data.firstName);
 });
-```

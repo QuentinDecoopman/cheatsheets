@@ -1,4 +1,4 @@
-# Cheatsheets Jest
+# Cheatsheet Jest
 
 - [Index](/Readme.md)
 - [Docs](https://jestjs.io/fr/docs/getting-started)
@@ -174,4 +174,3 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/index.js'],
 };
 
-```

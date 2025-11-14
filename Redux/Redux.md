@@ -85,4 +85,3 @@ const updatedState = store.getState();
 store.subscribe(() => {
   console.log("State updated:", store.getState());
 });
-```
