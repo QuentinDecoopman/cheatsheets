@@ -1,132 +1,148 @@
-# Cheatsheet Typescript
+# Cheatsheet TypeScript
 
 - [Index](../Readme.md)
 - [Doc](https://www.typescriptlang.org/)
 
-## Déclarations
+## Types de base
 
-```typescript
-let name: type = value;
-
-const name: type = value;
+```ts
+const count: number = 3;
+const name: string = "Alice";
+const isActive: boolean = true;
+const list: string[] = ["a", "b"];
+const tuple: [string, number] = ["id", 1];
 ```
 
-## Types
+## Interfaces et types
 
-```typescript
-let num: number = 5;
-
-let str: string = "Hello";
-
-let bool: boolean = true;
-
-let arr: number[] = [1, 2, 3];
-
-let tuple: [string, number] = ["foo", 42];
-```
-
-## Fonctions
-
-```typescript
-function add(x: number, y: number): number {
-  return x + y;
-}
-
-const multiply = (x: number, y: number): number => x * y;
-```
-
-## Interfaces
-
-```typescript
-interface Person {
+```ts
+interface User {
+  id: number;
   name: string;
-  age: number;
+  email?: string;
 }
 
-const user: Person = {
-  name: "John",
-  age: 25,
+type UserDTO = {
+  id: number;
+  name: string;
 };
 ```
 
-## Classes
+## Unions et intersections
 
-```typescript
-class Animal {
-  constructor(public name: string) {}
+```ts
+type Status = "idle" | "loading" | "success" | "error";
 
-  makeSound(): void {
-    console.log("Some generic sound");
-  }
-}
-
-class Dog extends Animal {
-  makeSound(): void {
-    console.log("Bark!");
-  }
-}
-```
-
-## Enums
-
-```typescript
-enum Color {
-  Red,
-  Green,
-  Blue,
-}
-
-let myColor: Color = Color.Red;
+type AdminUser = User & {
+  role: "admin";
+};
 ```
 
 ## Generics
 
-```typescript
-function identity<T>(arg: T): T {
-  return arg;
+```ts
+function identity<T>(value: T): T {
+  return value;
 }
 
-const numIdentity = identity<number>(5);
+const id = identity<number>(42);
 ```
 
-## Assertions de types
+## Type narrowing
 
-```typescript
-let someValue: any = "hello";
+```ts
+function print(value: string | number) {
+  if (typeof value === "string") {
+    console.log(value.toUpperCase());
+    return;
+  }
 
-let strLength: number = (someValue as string).length;
+  console.log(value.toFixed(2));
+}
 ```
 
-## Modules
+## `as const` et littéraux
 
-```typescript
-// Export
-export const myVariable: number = 42;
+```ts
+const roles = ["admin", "user"] as const;
 
-// Import
-import { myVariable } from "./myModule";
+type Role = (typeof roles)[number];
 ```
 
-## Types d'alias
+## Utility types
 
-```typescript
-type Point = {
-  x: number;
-  y: number;
+```ts
+type UserPreview = Pick<User, "id" | "name">;
+type UserInput = Omit<User, "id">;
+type PartialUser = Partial<User>;
+type RequiredUser = Required<User>;
+type UserMap = Record<string, User>;
+```
+
+## `satisfies`
+
+```ts
+const config = {
+  apiUrl: "/api",
+  retries: 3,
+} satisfies {
+  apiUrl: string;
+  retries: number;
 };
-
-const point: Point = { x: 10, y: 20 };
 ```
 
-## Types null
+## `keyof`, `typeof` et mapped types
 
-```typescript
-let nullableNumber: number | null = null;
+```ts
+type UserKey = keyof User;
+
+const user = { id: 1, name: "Alice" };
+type UserShape = typeof user;
 ```
 
-## Gardes
+## Classes
 
-```typescript
-if (typeof variable === "string") {
-  // variable is a string here
+```ts
+class Person {
+  constructor(public name: string) {}
+
+  greet() {
+    return `Bonjour ${this.name}`;
+  }
 }
+```
+
+## Enums (à utiliser avec modération)
+
+```ts
+enum Role {
+  Admin = "admin",
+  User = "user",
+}
+```
+
+## Fonctions async
+
+```ts
+async function fetchUser(id: number): Promise<User> {
+  const res = await fetch(`/api/users/${id}`);
+  return res.json();
+}
+```
+
+## Guardes de type personnalisées
+
+```ts
+function isUser(value: unknown): value is User {
+  return !!value && typeof value === "object" && "id" in value && "name" in value;
+}
+```
+
+## Bonnes pratiques
+
+- Éviter `any` quand possible.
+- Privilégier les interfaces pour les objets de données.
+- Utiliser `type` pour des unions, intersections et utilitaires.
+- Utiliser `satisfies` pour valider une configuration sans la déduire en `any`.
+- Gérer les valeurs `null` / `undefined` explicitement.
+- Ajouter des types retour aux fonctions publiques.

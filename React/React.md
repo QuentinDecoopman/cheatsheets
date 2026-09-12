@@ -1,458 +1,218 @@
 # Cheatsheet React
 
 - [Index](../Readme.md)
-- [Doc](https://fr.react.dev/)
+- [Doc](https://react.dev/)
+
+## Créer un projet
 
 ```bash
-npx create-react-app nom-du-projet
-
-npm create vite@latest
-```bash
-npx create-react-app nom-du-projet
-npm create vite@latest
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
 ```
 
-## Composant Fonctionnel :
+## Composant fonctionnel
 
 ```jsx
-import React from "react";
-import React from "react";
-function MonComposant(props) {
+function Greeting({ name }) {
+  return <h1>Bonjour {name} 👋</h1>;
+}
+```
+
+## Props
+
+```jsx
+function Card({ title, description }) {
   return (
-    <div>
-      <h1>{props.titre}</h1>
-      <p>{props.contenu}</p>
-    </div>
+    <article>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </article>
   );
 }
 ```
 
-## Composant de Classe :
+## State
 
 ```jsx
-import React, { Component } from "react";
-import React, { Component } from "react";
-class MonComposantClasse extends Component {
-  render() {
-    return (
-      <div>
-        <h1>{this.props.titre}</h1>
-        <p>{this.props.contenu}</p>
-      </div>
-    );
-  }
-}
-```
+import { useState } from "react";
 
-## Utilisation des Propriétés (Props) :
-
-```jsx
-<MonComposant titre="Titre" contenu="Contenu du composant" />
-<MonComposant titre="Titre" contenu="Contenu du composant" />
-
-## État (State) :
-
-```jsx
-import React, { useState } from "react";
-import React, { useState } from "react";
-function ComposantAvecEtat() {
+function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <p>Compteur: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Incrémenter</button>
-    </div>
+    <button onClick={() => setCount((c) => c + 1)}>
+      Compteur : {count}
+    </button>
   );
 }
 ```
 
-## Gestion des Événements :
-
-### Au clic :
+## Effets (useEffect)
 
 ```jsx
-function ComposantAvecEvenement() {
-  function ComposantAvecEvenement() {
-    // Code à exécuter lors du clic
-  }
+import { useEffect, useState } from "react";
 
-  return <button onClick={handleClick}>Cliquez-moi</button>;
+function UserPanel() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("/api/user")
+      .then((res) => res.json())
+      .then(setUser);
+  }, []);
+
+  return <div>{user ? user.name : "Chargement..."}</div>;
 }
 ```
 
-### Au changement :
+## Rendu conditionnel
 
 ```jsx
-function handleChange(event) {
-function handleChange(event) {
-}
-
-return <input type="text" onChange={handleChange} />;
-return <input type="text" onChange={handleChange} />;
-
-## Rendu conditionnel :
-
-```jsx
-function ComposantConditionnel({ condition }) {
-function ComposantConditionnel({ condition }) {
+function Status({ isOnline }) {
+  return isOnline ? <span>En ligne</span> : <span>Hors ligne</span>;
 }
 ```
 
-## Liste et Clés :
+## Listes et clés
 
 ```jsx
-function ListeDeComposants({ elements }) {
-function ListeDeComposants({ elements }) {
+function List({ items }) {
+  return (
     <ul>
-      {elements.map((element, index) => (
-        <li key={index}>{element}</li>
+      {items.map((item) => (
+        <li key={item.id}>{item.label}</li>
       ))}
     </ul>
   );
 }
 ```
 
-## Utilisation de l'État et des Propriétés dans le même composant :
+## Formulaires contrôlés
 
 ```jsx
-function ComposantAvecEtatEtProps({ props }) {
-function ComposantAvecEtatEtProps({ titre }) {
+import { useState } from "react";
 
-  const handleClick = () => {
-    setCount(count + 1);
-  };
+function SearchForm() {
+  const [query, setQuery] = useState("");
 
   return (
-    <div>
-      <h1>{titre}</h1>
-      <p>Compteur: {count}</p>
-      <button onClick={handleClick}>Incrémenter</button>
-    </div>
-  );
-}
-```
-
-## Formulaires :
-
-```jsx
-import React, { useState } from "react";
-import React, { useState } from "react";
-function Formulaire() {
-  const [valeur, setValeur] = useState("");
-
-  const handleChange = (e) => {
-    setValeur(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Code à exécuter lors de la soumission du formulaire
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={valeur} onChange={handleChange} />
-      <button type="submit">Envoyer</button>
+    <form>
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Rechercher"
+      />
     </form>
   );
 }
 ```
 
-## Hooks
-
-### useState
-
-```js
-// Import du hook
-import React, { useState } from "react";
-import React, { useState } from "react";
-const MonComposant = () => {
-  // Init le state à 0
-  const [compteur, setCompteur] = useState(0);
-
-  const incrementer = () => {
-    // Utilisation de setCompteur pour incrémenter le compteur
-    setCompteur(compteur + 1);
-  };
-
-  return (
-    <div>
-      <p>La valeur du compteur est : {compteur}</p>
-      <button onClick={incrementer}>Incrémenter</button>
-    </div>
-    /* Au clic, on incrément le compteur à chaque clic */
-  );
-};
-```
-
-### useEffect
-
-```js
-// Permet d'effectuer des opérations de côté (effets) dans les composants fonctionnels.
-// import du hook
-import React, { useEffect } from "react";
-import React, { useEffect } from "react";
-useEffect(() => {
-  // Effet
-  return () => {
-    // Code de nettoyage
-  };
-}, []);
-```
-
-### useContext
-
-```js
-// Permet d'accéder à la valeur d'un contexte React à l'intérieur d'un composant fonctionnel.
-
-// Création d'un contexte
-import React, { createContext } from "react";
-import React, { createContext } from "react";
-const MonContexte = createContext();
-
-// Déclaration d'une valeur avec Provider
-const MonComposant = () => {
-  return (
-    <MonContexte.Provider value={"Valeur à partager"}>
-      <MonComposantEnfant />
-    </MonContexte.Provider>
-  );
-};
-
-// Utilisation de useContext dans un composant
-import React, { useContext } from "react";
-import React, { useContext } from "react";
-const MonComposant = () => {
-  const valeurContexte = useContext(MonContexte);
-
-  return (
-    <div>
-      <p>Valeur du contexte : {valeurContexte}</p>
-    </div>
-  );
-};
-```
-
-### useReducer
-
-```js
-// Gère l'état d'un composant fonctionnel de manière plus avancée.
-
-const [state, dispatch] = useReducer(reducer, initialState);
-const [state, dispatch] = useReducer(reducer, initialState);
-
-### useCallback
-
-```js
-// Memoize une fonction pour éviter sa recréation à chaque rendu.
-const memoizedCallback = useCallback(() => {
-const memoizedCallback = useCallback(() => {
-}, []);
-```
+## Hooks utiles
 
 ### useMemo
 
-```js
-// Memoize la valeur calculée d'une expression pour éviter le recalcul inutile.
+```jsx
+import { useMemo, useState } from "react";
 
-const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
-const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+function ExpensiveList({ items }) {
+  const sorted = useMemo(
+    () => [...items].sort((a, b) => a.localeCompare(b)),
+    [items],
+  );
+
+  return <ul>{sorted.map((item) => <li key={item}>{item}</li>)}</ul>;
+}
+```
+
+### useCallback
+
+```jsx
+import { useCallback, useState } from "react";
+
+function Parent() {
+  const [count, setCount] = useState(0);
+
+  const increment = useCallback(() => {
+    setCount((c) => c + 1);
+  }, []);
+
+  return <Child onClick={increment} />;
+}
+```
 
 ### useRef
 
-```js
-// Crée un objet ref pour accéder à un élément DOM ou pour maintenir une valeur mutable.
+```jsx
+import { useRef } from "react";
 
-const myRef = useRef(initialValue);
-const myRef = useRef(initialValue);
+function InputFocus() {
+  const inputRef = useRef(null);
 
-## Requête fetch
-
-### GET
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://api.example.com/data");
-
-    const result = await response.json();
-
-    console.log("GET request result:", result);
-  } catch (error) {
-    console.log("Error fetching data:", error);
-  }
-};
+  return (
+    <>
+      <input ref={inputRef} />
+      <button onClick={() => inputRef.current?.focus()}>Focus</button>
+    </>
+  );
+}
 ```
 
-### Post
+## Requêtes HTTP
 
-```js
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://api.example.com/create", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+```jsx
+async function loadUsers() {
+  const res = await fetch("https://api.example.com/users");
 
-      body: JSON.stringify({
-        key: "value",
-      }),
-    });
-
-    const result = await response.json();
-
-    console.log("POST request result:", result);
-  } catch (error) {
-    console.log("Error making POST request:", error);
+  if (!res.ok) {
+    throw new Error("Erreur API");
   }
-};
+
+  return res.json();
+}
 ```
 
-### Put
+## Custom Hook
 
-```js
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://api.example.com/update", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
+```jsx
+import { useEffect, useState } from "react";
 
-      body: JSON.stringify({
-        key: "updatedValue",
-      }),
-    });
-    const result = await response.json();
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    console.log("PUT request result:", result);
-  } catch (error) {
-    console.log("Error making PUT request:", error);
-  }
-};
+  useEffect(() => {
+    let ignore = false;
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((json) => {
+        if (!ignore) setData(json);
+      })
+      .finally(() => {
+        if (!ignore) setLoading(false);
+      });
+
+    return () => {
+      ignore = true;
+    };
+  }, [url]);
+
+  return { data, loading };
+}
 ```
 
-### Patch
+## Bonnes pratiques
 
-```js
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://api.example.com/patch", {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
+- Préférer les composants fonctionnels et les hooks.
+- Garder les composants petits et réutilisables.
+- Éviter les effets pour des transformations de données simples.
+- Utiliser les clés stables dans les listes.
+- Séparer logique métier et rendu visuel.
+- Privilégier `useMemo`/`useCallback` seulement si nécessaire.
 
-      body: JSON.stringify({
-        key: "updatedValue",
-      }),
-    });
-    const result = await response.json();
+## Points React récents
 
-    console.log("PATCH request result:", result);
-  } catch (error) {
-    console.log("Error making PATCH request:", error);
-  }
-};
-```
-
-### Delete
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://api.example.com/delete", {
-      method: "DELETE",
-    });
-
-    const result = await response.json();
-
-    console.log("DELETE request result:", result);
-  } catch (error) {
-    console.log("Error making DELETE request:", error);
-  }
-};
-```
-
-## Requête Axios
-
-### GET
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await axios.get("https://api.example.com/data");
-
-    const result = await response.data;
-
-    console.log("GET request result:", result);
-  } catch (error) {
-    console.log("Error fetching data:", error);
-  }
-};
-```
-
-### Post
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await axios.post("https://api.example.com/create");
-
-    const result = await response.data;
-
-    console.log("POST request result:", result);
-  } catch (error) {
-    console.log("Error making POST request:", error);
-  }
-};
-```
-
-### Put
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await axios.put("https://api.example.com/update");
-
-    const result = await response.data;
-
-    console.log("PUT request result:", result);
-  } catch (error) {
-    console.log("Error making PUT request:", error);
-  }
-};
-```
-
-### Patch
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await axios.patch("https://api.example.com/patch");
-
-    const result = await response.data;
-
-    console.log("PATCH request result:", result);
-  } catch (error) {
-    console.log("Error making PATCH request:", error);
-  }
-};
-```
-
-### Delete
-
-```js
-const fetchData = async () => {
-  try {
-    const response = await axios.delete("https://api.example.com/delete");
-
-    const result = await response.data;
-
-    console.log("DELETE request result:", result);
-  } catch (error) {
-    console.log("Error making DELETE request:", error);
-  }
-};
+- React 18+ : concurrent rendering et `useTransition`.
+- `useDeferredValue` et `startTransition` pour améliorer la fluidité.
+- Le rendu côté serveur devient standard avec Next.js / React Server Components.
