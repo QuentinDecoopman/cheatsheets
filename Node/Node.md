@@ -1,6 +1,6 @@
 # Cheatsheet Node.js
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://nodejs.org/en/docs)
 
 ## Modules

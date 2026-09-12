@@ -1,6 +1,6 @@
 # MCD : Modèle conceptuel de données
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 ### Aussi appelé Modèle Entité‑Association
 
@@ -38,7 +38,7 @@ d'une association.
 ![Exemple de MCD](MCD.png "MCD")
 # MCD : Modèle conceptuel de données
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 ### aussi appellé modèle entité association
 

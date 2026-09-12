@@ -1,6 +1,6 @@
 # Redux
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://redux.js.org/)
 
 ## Installation

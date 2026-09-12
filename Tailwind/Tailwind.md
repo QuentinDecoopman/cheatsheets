@@ -1,6 +1,6 @@
 # Tailwind
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://v2.tailwindcss.com/docs)
 
 Framework CSS utility-first et open source.

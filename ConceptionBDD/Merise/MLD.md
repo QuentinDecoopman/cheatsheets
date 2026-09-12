@@ -1,6 +1,6 @@
 # MLD : Modèle logique de données
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 Le MLD est déduit du MCD et prépare l'implémentation dans un SGBD relationnel. Il transforme les concepts du MCD
 en structures logiques (tables, colonnes, clés, contraintes).
@@ -19,7 +19,7 @@ Ces règles sont des lignes directrices : selon le contexte et le SGBD, il peut 
 à appliquer.
 # MLD : Modèle logique de données
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 Déduction du MLD à partir du MCD :
 - Règle 1 :

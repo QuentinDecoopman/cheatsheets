@@ -1,6 +1,6 @@
 # Méthode Merise
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 Merise est une méthode de modélisation utilisée pour analyser la structure à informatiser et cadrer les projets
 informatiques. Elle facilite la communication entre utilisateurs et informaticiens en séparant les préoccupations
@@ -26,7 +26,7 @@ Les niveaux principaux sont :
 Ces niveaux permettent de passer d'une vue métier à une implémentation technique de manière structurée.
 # Méthode Merise
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 
 Merise est une méthode informatique dédiée à la modélisation qui analyse la structure à informatiser en terme de
 systèmes. Le gros avantage de cette méthode est qu’elle permet de cadrer le projet informatique et de « discuter » en se

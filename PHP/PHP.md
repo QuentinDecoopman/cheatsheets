@@ -1,6 +1,6 @@
 # PHP
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://www.php.net/docs.php)
 
 ## Structure d'une page PHP

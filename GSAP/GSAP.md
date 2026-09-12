@@ -2,7 +2,7 @@
 
 GreenSock Animation Platform (GSAP) — bibliothèque d'animations JavaScript.
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Docs](https://greensock.com/docs/v3/)
 
 ## Installation

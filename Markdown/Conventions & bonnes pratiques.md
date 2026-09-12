@@ -403,7 +403,7 @@ docs/API Reference.md
 
 # ❌ Éviter - chemins absolus
 
-[Documentation](/Users/name/project/docs/README.md)
+[Documentation](https://example.com/docs)
 ```
 
 ### 4. Ancres de section

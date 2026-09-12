@@ -1,6 +1,6 @@
 # Cheatsheet Python
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://docs.python.org/3/)
 
 ## Variables et Types de Données :

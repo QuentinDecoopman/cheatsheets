@@ -1,6 +1,6 @@
 # Cheatsheet Markdown
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://www.markdownguide.org/)
 
 ## Titres

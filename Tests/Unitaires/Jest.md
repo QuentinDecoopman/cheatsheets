@@ -1,6 +1,6 @@
 # Cheatsheet Jest
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 - [Docs](https://jestjs.io/fr/docs/getting-started)
 
 # Installation

@@ -1,6 +1,6 @@
 # Cheatsheet Typescript
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://www.typescriptlang.org/)
 
 ## Déclarations

@@ -1,6 +1,6 @@
 ## Tableau du lexique
 
-- [Index](/Readme.md)
+- [Index](Readme.md)
 
 ### ARCHITECTURE
 

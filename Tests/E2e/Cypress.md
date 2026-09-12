@@ -1,6 +1,6 @@
 # Cypress
 
-- [Index](/Readme.md)
+- [Index](../../Readme.md)
 - [Doc](https://www.cypress.io/)
 
 ## Installation

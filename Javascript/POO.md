@@ -1,6 +1,6 @@
 # Programmation orientée objet
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 
 ## Class
 

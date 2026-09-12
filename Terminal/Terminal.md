@@ -1,6 +1,6 @@
 # Commandes de terminal
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 
 ## Navigation dans le système de fichiers
 
@@ -100,7 +100,7 @@ df -h
 
 # Commande de terminal
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 
 ## Navigation dans le système de fichiers:
 

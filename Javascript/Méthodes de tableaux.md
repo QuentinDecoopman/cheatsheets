@@ -1,6 +1,6 @@
 # Méthode de tableaux
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 
 ## At():
 

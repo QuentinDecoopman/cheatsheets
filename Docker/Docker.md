@@ -1,6 +1,6 @@
 # Cheatsheet Docker
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Docs](https://docs.docker.com/)
 
 ## Commandes de base

@@ -14,6 +14,11 @@ Un ensemble de cheatsheets et de notes personnelles.
   - [UML](ConceptionBDD/UML/UML.md)
 - [Conventions & bonnes pratiques](ConceptionBDD/Conventions%20%26%20bonnes%20pratiques.md)
 
+### Authentification
+
+- [NextAuth](Auth/NextAuth/NextAuth.md)
+- [Better Auth](Auth/BetterAuth/BetterAuth.md)
+
 ### Frontend
 
 - [CSS](CSS/CSS.md)
@@ -75,6 +80,9 @@ Un ensemble de cheatsheets et de notes personnelles.
 ### ORM
 
 - [Conventions & bonnes pratiques (Universelles)](ORM/Conventions%20%26%20bonnes%20pratiques.md)
+- Drizzle
+  - [Drizzle](ORM/Drizzle/drizzle.md)
+  - [Conventions & bonnes pratiques](ORM/Drizzle/Conventions%20%26%20bonnes%20pratiques.md)
 - Prisma
   - [Prisma](ORM/Prisma/prisma.md)
   - [Conventions & bonnes pratiques](ORM/Prisma/Conventions%20%26%20bonnes%20pratiques.md)

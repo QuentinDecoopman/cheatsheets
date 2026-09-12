@@ -1,6 +1,6 @@
 # Chronologie des Langages
 
-- [Index](/Readme.md)
+- [Index](Readme.md)
 
 ## 1940-1949
 

@@ -2,7 +2,7 @@
 
 # Cheatsheet SQL
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://sql.sh/)
 
 ## Création de tables

@@ -1,6 +1,6 @@
 # Cheatsheet JavaScript
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 - [JS INFO](https://fr.javascript.info/)
 

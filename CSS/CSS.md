@@ -1,6 +1,6 @@
 # Cheatsheet CSS
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc MDN](https://developer.mozilla.org/fr/docs/Web/CSS)
 
 ## Sélecteurs

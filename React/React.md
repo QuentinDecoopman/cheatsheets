@@ -1,6 +1,6 @@
 # Cheatsheet React
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://fr.react.dev/)
 
 ```bash

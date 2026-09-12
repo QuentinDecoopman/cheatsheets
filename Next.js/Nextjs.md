@@ -1,6 +1,6 @@
 # Cheatsheet Next.js
 
-- [Index](/Readme.md)
+- [Index](../Readme.md)
 - [Doc](https://nextjs.org/)
 
 ## Installation
