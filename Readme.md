@@ -105,6 +105,7 @@ Un ensemble de cheatsheets et de notes personnelles.
   - [Conventions & bonnes pratiques](Markdown/Conventions%20%26%20bonnes%20pratiques.md)
 - [Terminal](Terminal/Terminal.md)
   - [Conventions & bonnes pratiques](Terminal/Conventions%20%26%20bonnes%20pratiques.md)
+- [Excel](Excel/excel-cheatsheet.md)
 
 ### Sécurité
 
